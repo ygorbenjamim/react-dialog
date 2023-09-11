@@ -1,15 +1,5 @@
 import { createContext, useContext } from 'react';
-import { IOption } from '../interfaces/IOption.ts';
-
-interface IDialogContextData {
-	dialog: (
-		title: string,
-		subtitle: string,
-		options?: IOption[],
-		design?: 'default' | 'minimal',
-		loading?: boolean,
-	) => void;
-}
+import { IDialogContextData } from '../interfaces/IDialogContextData.ts';
 
 const DialogContext = createContext({} as IDialogContextData);
 

@@ -1,15 +1,6 @@
 import styled, { css } from 'styled-components';
-
-interface IButtonContainerProps {
-	loading?: string;
-	$isCancel?: boolean;
-	$color?: string;
-}
-
-interface ILabelProps {
-	$isCancel?: boolean;
-	$color?: string;
-}
+import { IButtonContainerProps } from '../../interfaces/IButtonContainerProps.ts';
+import { ILabelProps } from '../../interfaces/ILabelProps.ts';
 
 export const ButtonContainer = styled.button<IButtonContainerProps>`
 	display: flex;

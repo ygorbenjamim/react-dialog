@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Button } from '../Button/index.tsx';
 import {
 	Container,
@@ -50,8 +50,8 @@ export const useDialog = () => {
 								key={i}
 								//onClick={() => handleRemove(dialog.id)}
 							>
-								<Title color={color}>{dialog.title}</Title>
-								<Information color={color}>
+								<Title $color={color}>{dialog.title}</Title>
+								<Information $color={color}>
 									{dialog.subtitle}
 								</Information>
 								<ButtonsContainer>

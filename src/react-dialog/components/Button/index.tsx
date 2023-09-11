@@ -1,16 +1,6 @@
-import React, { ReactNode } from 'react';
 import { Loading } from '../Loading/index.tsx';
+import { IButtonProps } from '../../interfaces/IButtonProps.ts';
 import { ButtonContainer, Label } from './styles.ts';
-
-interface IButtonProps {
-	children: ReactNode;
-	onClick?: () => void;
-	loading?: boolean;
-	disabled?: boolean;
-	color?: string;
-	type: 'button' | 'submit' | 'reset';
-	isCancel?: boolean;
-}
 
 export const Button = ({
 	children,
