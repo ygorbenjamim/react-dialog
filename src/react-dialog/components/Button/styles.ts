@@ -15,7 +15,7 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 	align-items: center;
 	width: 100%;
 	border: none;
-	padding: 14px;
+	padding: 7px;
 	border-radius: 7px;
 	background-color: ${({ loading }) => {
 		if (loading == 'true') {
@@ -31,7 +31,7 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 		if ($isCancel) {
 			return css`
 				background-color: transparent;
-				padding: 10px;
+				padding: 3px;
 				border: 1px solid #43bec6;
 			`;
 		}

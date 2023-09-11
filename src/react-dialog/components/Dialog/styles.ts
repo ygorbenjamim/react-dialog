@@ -36,12 +36,14 @@ export const Content = styled.div`
 export const Title = styled.h2`
 	font-size: large;
 	margin-bottom: 20px;
+	text-align: left;
 	color: #43bec6;
 `;
 
 export const Information = styled.p`
 	max-height: 50vh;
 	overflow: auto;
+	text-align: left;
 	word-wrap: break-word;
 	font-size: medium;
 	white-space: pre-line;
