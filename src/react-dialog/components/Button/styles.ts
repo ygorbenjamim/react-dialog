@@ -14,9 +14,8 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	min-height: 50px;
 	border: none;
-	padding: 7px;
+	padding: 14px;
 	border-radius: 7px;
 	background-color: ${({ loading }) => {
 		if (loading == 'true') {
@@ -32,7 +31,7 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 		if ($isCancel) {
 			return css`
 				background-color: transparent;
-				padding: 3px;
+				padding: 10px;
 				border: 1px solid #43bec6;
 			`;
 		}
@@ -46,6 +45,7 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 `;
 
 export const Label = styled.p<ILabelProps>`
+	margin: 0;
 	color: #ffff;
 	background-color: transparent;
 	${({ $isCancel }) => {
