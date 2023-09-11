@@ -39,7 +39,7 @@ export const Title = styled.h2<IColorProps>`
 	margin-top: 0;
 	margin-bottom: 10px;
 	text-align: left;
-	color: ${({ $color }) => $color};
+	color: ${({ $color }) => ($color ? $color : '#252525')};
 `;
 
 export const Information = styled.p<IColorProps>`
