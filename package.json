@@ -4,7 +4,16 @@
 	"private": false,
 	"version": "0.0.1",
 	"main": "lib/react-dialog.js",
+	"types": "lib/.d.ts",
 	"type": "module",
+	"author": "Ygor Benjamim",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ygorbenjamim/react-dialog.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ygorbenjamim/react-dialog/issues"
+	},
 	"scripts": {
 		"build": "webpack --config webpack.config.cjs",
 		"dev": "vite",
