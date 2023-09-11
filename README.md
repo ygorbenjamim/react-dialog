@@ -10,24 +10,23 @@ yarn add github:ygorbenjamim/react-dialog
 
 ## Configuração
 
-É necessário envolver toda aplicação com o `Provider` que está em hooks/useComponent
+É necessário envolver toda aplicação com o `Provider`. Em seu ponto de entrada, por exemplo /src/App.tsx
 
 ```js
 import DialogProvider from 'react-dialog';
+
 function App() {
 	return (
 		<DialogProvider>
-			<Home />
+			{/* Rotas da aplicação ou demais providers */}
 		</DialogProvider>
 	);
 }
 ```
 
-## Propriedades
+### Parâmetros do dialog
 
-### Propriedades
-
-|   Prop   |       Tipo       |              Descrição              | Requerido |
+|  param   |       Tipo       |              Descrição              | Requerido |
 | :------: | :--------------: | :---------------------------------: | :-------: |
 |  title   |     `string`     |          Título do dialog           |    Sim    |
 | subtitle |     `string`     |         Subtítulo do dialog         |    Sim    |
