@@ -5,7 +5,7 @@ Este é um componente de diálogo simples, projetado para criar notificações o
 ## Instalação
 
 ```
-yarn add github:ygorbenjamim/react-dialog
+yarn add github:ygorbenjamim/react-dialog#main
 ```
 
 ## Configuração
