@@ -32,7 +32,7 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 	transition: 0.3s all ease;
 	&:hover {
 		cursor: pointer;
-		background-color: #e9e9e9;
+		background-color: ${({ $color }) => $color}80;
 		transition: 0.2s all ease;
 	}
 `;
