@@ -2,17 +2,23 @@
 
 Este é um componente de diálogo simples, projetado para criar notificações ou mensagens de alerta elegantes em páginas da web. Inspirado no clássico "alert" do JavaScript, este componente oferece uma alternativa flexível e personalizável para exibir mensagens importantes aos usuários, mantendo a funcionalidade amigável e intuitiva.
 
+## Instalação
+
+```
+yarn add github:ygorbenjamim/react-dialog
+```
+
 ## Configuração
 
 É necessário envolver toda aplicação com o `Provider` que está em hooks/useComponent
 
-```tsx
-import { ComponentProvider } from './hooks/useComponent';
+```js
+import DialogProvider from 'react-dialog';
 function App() {
 	return (
-		<ComponentProvider>
+		<DialogProvider>
 			<Home />
-		</ComponentProvider>
+		</DialogProvider>
 	);
 }
 ```
@@ -23,8 +29,8 @@ function App() {
 
 |   Prop   |       Tipo       |              Descrição              | Requerido |
 | :------: | :--------------: | :---------------------------------: | :-------: |
-|  title   |     `string`     | Título do dialog |    Sim    |
-| subtitle |     `string`     | Subtítulo do dialog |    Sim    |
+|  title   |     `string`     |          Título do dialog           |    Sim    |
+| subtitle |     `string`     |         Subtítulo do dialog         |    Sim    |
 | options  | `IOptionsProp[]` | Função que será executada ao clicar |    Não    |
 
 #### O tipo `IOptionsProp` consiste na seguinte interface
@@ -38,13 +44,13 @@ interface IOptionsProp {
 
 ## Uso
 
-Para utilizar as funcionalidades deste componente, basta importar a função `dialog` do hook `useComponent`
+Para utilizar as funcionalidades deste componente, basta importar a função `dialog` do hook `useDialog`
 
-```tsx
-import { useComponent } from '../../hooks/useComponent';
+```js
+import { useDialog } from 'react-dialog';
 
 const Home = () => {
-	const { dialog } = useComponent();
+	const { dialog } = useDialog();
 
 	const handleDialog = () => {
 		dialog('Título', 'Descrição');
