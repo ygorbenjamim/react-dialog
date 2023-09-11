@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Button } from '../Button/index.tsx';
 import {
 	Container,

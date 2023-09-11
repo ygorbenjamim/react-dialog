@@ -1,3 +1,4 @@
+import React from 'react';
 import { Loading } from '../Loading/index.tsx';
 import { IButtonProps } from '../../interfaces/IButtonProps.ts';
 import { ButtonContainer, Label } from './styles.ts';
