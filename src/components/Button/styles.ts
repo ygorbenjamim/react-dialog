@@ -20,11 +20,11 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 	background-color: ${({ loading }) => {
 		if (loading == 'true') {
 			return css`
-				${({ theme }) => theme.colors?.primary_dark};
+				#666;
 			`;
 		}
 		return css`
-			${({ theme }) => theme.colors?.primary}
+			#43bec6
 		`;
 	}};
 	${({ $isCancel }) => {
@@ -32,25 +32,25 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 			return css`
 				background-color: transparent;
 				padding: 10px;
-				border: 1px solid ${({ theme }) => theme.colors?.primary};
+				border: 1px solid #43bec6;
 			`;
 		}
 	}};
 	transition: 0.3s all ease;
 	&:hover {
 		cursor: pointer;
-		background-color: ${({ theme }) => theme.colors?.primary_dark};
+		background-color: #666;
 		transition: 0.2s all ease;
 	}
 `;
 
 export const Label = styled.p<ILabelProps>`
-	color: ${({ theme }) => theme.colors?.white};
-	background-color: ${({ theme }) => theme.colors?.transparent};
+	color: #ffff;
+	background-color: transparent;
 	${({ $isCancel }) => {
 		if ($isCancel) {
 			return css`
-				color: ${({ theme }) => theme.colors?.primary};
+				color: #43bec6;
 			`;
 		}
 	}};

@@ -7,37 +7,13 @@ import {
 	Information,
 	ButtonsContainer,
 } from './styles';
+import { IDialogItemProps } from '../../interfaces/IDialogItemProps';
+import { IOption } from '../../interfaces/IOption';
 
-export interface IOptionsProp {
-	text: string;
-	onPress: () => void;
-}
-
-export interface IDataFlatListProp {
-	item: IOptionsProp;
-	index: number;
-}
-
-interface IDialogItemProps {
-	id: number;
-	title: string;
-	subtitle?: string;
-	options?: IOptionsProp[];
-}
-
-interface IuseDialogReturn {
-	Dialog: () => JSX.Element;
-	dialog: (title: string, subtitle: string, options?: IOptionsProp[]) => void;
-}
-
-export const useDialog = (): IuseDialogReturn => {
+export const useDialog = () => {
 	const [dialogList, setDialogList] = useState<IDialogItemProps[]>([]);
 
-	const dialog = (
-		title: string,
-		subtitle: string,
-		options?: IOptionsProp[],
-	) => {
+	const dialog = (title: string, subtitle: string, options?: IOption[]) => {
 		setDialogList([
 			...dialogList,
 			{
@@ -50,7 +26,7 @@ export const useDialog = (): IuseDialogReturn => {
 	};
 
 	const Dialog = (): JSX.Element => {
-		const handlePressOption = (item: IOptionsProp, id: number) => {
+		const handlePressOption = (item: IOption, id: number) => {
 			item.onPress();
 			handleRemove(id);
 		};

@@ -26,7 +26,7 @@ export const Content = styled.div`
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 	animation: ${slideRight} 0.3s ease-out;
-	background-color: ${({ theme }) => theme.colors?.white};
+	background-color: #ffff;
 	// Mobile
 	@media (max-width: 820px) {
 		width: 90%;
@@ -36,17 +36,19 @@ export const Content = styled.div`
 export const Title = styled.h2`
 	font-size: large;
 	margin-bottom: 20px;
-	color: ${({ theme }) => theme.colors?.primary};
+	color: #43bec6;
 `;
 
 export const Information = styled.p`
+	max-height: 50vh;
+	overflow: auto;
 	word-wrap: break-word;
 	font-size: medium;
 	white-space: pre-line;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid ${({ theme }) => theme.colors?.primary};
-	color: ${({ theme }) => theme.colors?.dark};
+	border-bottom: 1px solid #43bec6;
+	color: #666;
 `;
 
 export const ButtonsContainer = styled.div`

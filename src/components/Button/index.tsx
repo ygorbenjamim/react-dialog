@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import { Loading } from '../Loading';
-import { useTheme } from 'styled-components';
 import { ButtonContainer, Label } from './styles';
 
 interface IButtonProps {
@@ -20,8 +19,6 @@ export const Button = ({
 	type,
 	isCancel,
 }: IButtonProps): JSX.Element => {
-	const { colors } = useTheme();
-
 	return (
 		<ButtonContainer
 			loading={`${loading}`}
@@ -30,7 +27,7 @@ export const Button = ({
 			onClick={onClick}
 			$isCancel={isCancel}>
 			{loading ? (
-				<Loading size={23} color={colors.white} />
+				<Loading size={23} color="#FFFF" />
 			) : (
 				<Label $isCancel={isCancel}>{children}</Label>
 			)}

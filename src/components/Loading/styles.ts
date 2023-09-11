@@ -11,7 +11,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	align-items: center;
 	gap: 20px;
-	background-color: ${({ theme }) => theme.colors?.transparent};
+	background-color: transparent;
 `;
 
 export const Spinner = styled.div<ISpinnerProps>`
@@ -42,7 +42,7 @@ export const Spinner = styled.div<ISpinnerProps>`
 `;
 
 export const Label = styled.p`
-	color: ${({ theme }) => theme.colors?.dark};
+	color: #666;
 	font-weight: bold;
-	font-size: ${({ theme }) => theme.fonts?.size?.normal};
+	font-size: 17px;
 `;

@@ -1,7 +1,7 @@
-import { useComponent } from '../../hooks/useComponent';
+import { useDialog } from '../../contexts/dialogContext';
 
 const Home = () => {
-	const { dialog } = useComponent();
+	const { dialog } = useDialog();
 
 	const handleDialog = () => {
 		dialog('Título', 'Descrição');
