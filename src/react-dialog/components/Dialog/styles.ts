@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { fadeIn, slideRight } from '../../styles/animations.ts';
 
+interface IInformationProps {
+	color?: string;
+}
+
 export const Container = styled.div`
 	position: fixed;
 	top: 0;
@@ -38,10 +42,9 @@ export const Title = styled.h2`
 	margin-top: 0;
 	margin-bottom: 10px;
 	text-align: left;
-	color: #43bec6;
 `;
 
-export const Information = styled.p`
+export const Information = styled.p<IInformationProps>`
 	max-height: 50vh;
 	overflow: auto;
 	text-align: left;
@@ -51,7 +54,7 @@ export const Information = styled.p`
 	padding-bottom: 20px;
 	margin-top: 0;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #43bec6;
+	border-bottom: 1px solid ${({ color }) => color};
 	color: #666;
 `;
 

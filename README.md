@@ -17,7 +17,7 @@ import DialogProvider from 'react-dialog';
 
 function App() {
 	return (
-		<DialogProvider>
+		<DialogProvider color="#2789">
 			{/* Rotas da aplicação ou demais providers */}
 		</DialogProvider>
 	);
