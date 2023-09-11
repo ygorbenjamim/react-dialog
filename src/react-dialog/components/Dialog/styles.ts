@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fadeIn, slideRight } from '../../../styles/animations.ts';
+import { fadeIn, slideRight } from '../../styles/animations.ts';
 
 export const Container = styled.div`
 	position: fixed;
