@@ -35,7 +35,7 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
 	font-size: large;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-align: left;
 	color: #43bec6;
 `;
@@ -48,7 +48,7 @@ export const Information = styled.p`
 	font-size: medium;
 	white-space: pre-line;
 	padding-bottom: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-bottom: 1px solid #43bec6;
 	color: #666;
 `;
