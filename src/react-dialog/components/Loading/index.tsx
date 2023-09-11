@@ -1,4 +1,4 @@
-import { Container, Spinner, Label } from './styles';
+import { Container, Spinner, Label } from './styles.ts';
 
 interface ILoadingProps {
 	color: string;

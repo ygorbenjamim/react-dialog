@@ -1,6 +1,6 @@
-import { DialogContext } from '../contexts/dialogContext';
-import { useDialog } from '../components/Dialog';
-import { IDialogProviderProps } from '../interfaces/IDialogProviderProps';
+import { DialogContext } from '../contexts/dialogContext.ts';
+import { useDialog } from '../components/Dialog/index.tsx';
+import { IDialogProviderProps } from '../interfaces/IDialogProviderProps.ts';
 
 const DialogProvider = ({ children }: IDialogProviderProps) => {
 	const { dialog, Dialog } = useDialog();

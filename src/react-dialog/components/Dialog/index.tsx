@@ -1,14 +1,14 @@
 import { useCallback, useState } from 'react';
-import { Button } from '../Button';
+import { Button } from '../Button/index.tsx';
 import {
 	Container,
 	Content,
 	Title,
 	Information,
 	ButtonsContainer,
-} from './styles';
-import { IDialogItemProps } from '../../interfaces/IDialogItemProps';
-import { IOption } from '../../interfaces/IOption';
+} from './styles.ts';
+import { IDialogItemProps } from '../../interfaces/IDialogItemProps.ts';
+import { IOption } from '../../interfaces/IOption.ts';
 
 export const useDialog = () => {
 	const [dialogList, setDialogList] = useState<IDialogItemProps[]>([]);

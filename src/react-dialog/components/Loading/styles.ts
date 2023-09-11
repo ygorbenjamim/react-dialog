@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { spin } from '../../styles/animations';
+import { spin } from '../../../styles/animations.ts';
 
 interface ISpinnerProps {
 	color: string;

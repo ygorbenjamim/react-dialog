@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { IOption } from '../interfaces/IOption';
+import { IOption } from '../interfaces/IOption.ts';
 
 interface IDialogContextData {
 	dialog: (
