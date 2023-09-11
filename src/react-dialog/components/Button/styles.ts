@@ -3,10 +3,12 @@ import styled, { css } from 'styled-components';
 interface IButtonContainerProps {
 	loading?: string;
 	$isCancel?: boolean;
+	$color?: string;
 }
 
 interface ILabelProps {
 	$isCancel?: boolean;
+	$color?: string;
 }
 
 export const ButtonContainer = styled.button<IButtonContainerProps>`
@@ -17,22 +19,22 @@ export const ButtonContainer = styled.button<IButtonContainerProps>`
 	border: none;
 	padding: 14px;
 	border-radius: 7px;
-	background-color: ${({ loading }) => {
+	background-color: ${({ loading, $color }) => {
 		if (loading == 'true') {
 			return css`
 				#666;
 			`;
 		}
 		return css`
-			#43bec6
+			${$color}
 		`;
 	}};
-	${({ $isCancel }) => {
+	${({ $isCancel, $color }) => {
 		if ($isCancel) {
 			return css`
 				background-color: transparent;
 				padding: 10px;
-				border: 1px solid #43bec6;
+				border: 1px solid ${$color};
 			`;
 		}
 	}};
@@ -48,10 +50,10 @@ export const Label = styled.p<ILabelProps>`
 	margin: 0;
 	color: #ffff;
 	background-color: transparent;
-	${({ $isCancel }) => {
+	${({ $isCancel, $color }) => {
 		if ($isCancel) {
 			return css`
-				color: #43bec6;
+				color: ${$color};
 			`;
 		}
 	}};

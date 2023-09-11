@@ -7,6 +7,7 @@ interface IButtonProps {
 	onClick?: () => void;
 	loading?: boolean;
 	disabled?: boolean;
+	color?: string;
 	type: 'button' | 'submit' | 'reset';
 	isCancel?: boolean;
 }
@@ -16,6 +17,7 @@ export const Button = ({
 	onClick,
 	loading,
 	disabled,
+	color,
 	type,
 	isCancel,
 }: IButtonProps): JSX.Element => {
@@ -25,9 +27,10 @@ export const Button = ({
 			disabled={loading || disabled}
 			type={type}
 			onClick={onClick}
+			$color={color}
 			$isCancel={isCancel}>
 			{loading ? (
-				<Loading size={23} color="#FFFF" />
+				<Loading size={23} color="#F4F4F4F4" />
 			) : (
 				<Label $isCancel={isCancel}>{children}</Label>
 			)}

@@ -25,7 +25,7 @@ export const useDialog = () => {
 		]);
 	};
 
-	const Dialog = (): JSX.Element => {
+	const Dialog = ({ color }: { color?: string }): JSX.Element => {
 		const handlePressOption = (item: IOption, id: number) => {
 			item.onPress();
 			handleRemove(id);
@@ -50,11 +50,14 @@ export const useDialog = () => {
 								key={i}
 								//onClick={() => handleRemove(dialog.id)}
 							>
-								<Title>{dialog.title}</Title>
-								<Information>{dialog.subtitle}</Information>
+								<Title color={color}>{dialog.title}</Title>
+								<Information color={color}>
+									{dialog.subtitle}
+								</Information>
 								<ButtonsContainer>
 									{!dialog.options && (
 										<Button
+											color={color}
 											onClick={() => setDialogList([])}
 											type="button">
 											OK
