@@ -23,8 +23,8 @@ function App() {
 
 |   Prop   |       Tipo       |              Descrição              | Requerido |
 | :------: | :--------------: | :---------------------------------: | :-------: |
-|  title   |     `string`     | Função que será executada ao clicar |    Sim    |
-| subtitle |     `string`     | Função que será executada ao clicar |    Sim    |
+|  title   |     `string`     | Título do dialog |    Sim    |
+| subtitle |     `string`     | Subtítulo do dialog |    Sim    |
 | options  | `IOptionsProp[]` | Função que será executada ao clicar |    Não    |
 
 #### O tipo `IOptionsProp` consiste na seguinte interface
