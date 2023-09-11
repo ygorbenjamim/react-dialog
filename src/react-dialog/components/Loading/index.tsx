@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Spinner, Label } from './styles.ts';
 
 interface ILoadingProps {

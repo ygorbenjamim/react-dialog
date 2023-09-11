@@ -1,3 +1,4 @@
+import React from 'react';
 import { DialogContext } from '../contexts/dialogContext.ts';
 import { useDialog } from '../components/Dialog/index.tsx';
 import { IDialogProviderProps } from '../interfaces/IDialogProviderProps.ts';

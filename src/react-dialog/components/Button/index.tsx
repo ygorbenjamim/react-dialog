@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import { Loading } from '../Loading/index.tsx';
 import { ButtonContainer, Label } from './styles.ts';
 
