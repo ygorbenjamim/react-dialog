@@ -10,14 +10,14 @@ yarn add github:ygorbenjamim/react-dialog#main
 
 ## Configuração
 
-É necessário envolver toda aplicação com o `Provider`. Em seu ponto de entrada, por exemplo /src/App.tsx
+É necessário envolver toda aplicação com o `Provider`. Em seu ponto de entrada, por exemplo `/src/App.tsx`, adicione o DialogProvier e escolha uma cor primária para o seu dialog.
 
 ```js
 import DialogProvider from 'react-dialog';
 
 function App() {
 	return (
-		<DialogProvider color="#2789">
+		<DialogProvider color="#5d9b9b">
 			{/* Rotas da aplicação ou demais providers */}
 		</DialogProvider>
 	);
