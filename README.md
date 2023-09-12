@@ -10,7 +10,7 @@ yarn add github:ygorbenjamim/react-dialog#main
 
 ## Configuração
 
-É necessário envolver toda aplicação com o `Provider`. Em seu ponto de entrada, por exemplo `/src/App.tsx`, adicione o DialogProvier e escolha uma cor primária para o seu dialog.
+É necessário envolver toda aplicação com o `Provider`. Em seu ponto de entrada, por exemplo `/src/App.tsx`, adicione o DialogProvider e escolha uma cor primária para o seu dialog.
 
 ```js
 import DialogProvider from 'react-dialog';
@@ -43,7 +43,7 @@ interface IOptionsProp {
 
 ## Uso
 
-Para utilizar as funcionalidades deste componente, basta importar a função `dialog` do hook `useDialog`
+Para utilizar as funcionalidades deste componente, basta importar a função `dialog` do hook `useDialog`.
 
 ```js
 import { useDialog } from 'react-dialog';
