@@ -14,7 +14,7 @@ export const Container = styled.div`
 	justify-content: center;
 	animation: ${fadeIn} 0.3s ease-out;
 	width: 100%;
-	z-index: 1;
+	z-index: 200;
 	background-color: rgba(0, 0, 0, 0.5);
 `;
 
