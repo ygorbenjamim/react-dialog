@@ -6,19 +6,19 @@ declare module 'react-dialog' {
 		color?: string;
 	}
 
-	export const DialogProvider: ({
+	export default function DialogProvider({
 		children,
 		color,
-	}: IDialogProviderProps) => JSX.Element;
+	}: IDialogProviderProps): JSX.Element | null;
 
 	interface IOption {
 		text: string;
 		onPress: () => void;
 	}
 
-	export const dialog: (
-		title: string,
-		subtitle: string,
-		options?: IOption[],
-	) => void;
+	export interface IDialogContextData {
+		dialog: (title: string, subtitle: string, options?: IOption[]) => void;
+	}
+
+	export function useDialog(): IDialogContextData;
 }
