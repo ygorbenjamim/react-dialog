@@ -4,7 +4,7 @@
 	"private": false,
 	"version": "0.0.1",
 	"main": "lib/react-dialog.js",
-	"types": "lib/.d.ts",
+	"types": "lib/Dialog.d.ts",
 	"type": "module",
 	"author": "Ygor Benjamim",
 	"repository": {
