@@ -66,6 +66,7 @@ export const useDialog = () => {
 									{dialog.options?.map(item => {
 										return (
 											<Button
+												color={color}
 												onClick={() =>
 													handlePressOption(
 														item,
