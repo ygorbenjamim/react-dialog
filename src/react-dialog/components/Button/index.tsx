@@ -23,7 +23,9 @@ export const Button = ({
 			{loading ? (
 				<Loading size={23} color="#F4F4F4F4" />
 			) : (
-				<Label $isCancel={isCancel}>{children}</Label>
+				<Label $isCancel={isCancel} $color={color}>
+					{children}
+				</Label>
 			)}
 		</ButtonContainer>
 	);
